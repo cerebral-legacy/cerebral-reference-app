@@ -1,0 +1,33 @@
+.wrapper {
+  font-family: Ubuntu, sans-serif;
+  padding: 15px;
+  background-color: #28374b;
+  height: calc(100% - 86px);
+  overflow-y: auto;
+}
+
+.descriptionWrapper {
+  padding-bottom: 60px;
+}
+
+.header {
+  font-size: 22px;
+}
+
+.googleInput {
+  display: inline-block;
+  width: 170px;
+  margin-right: 10px;
+  margin-top: 8px;
+  position: relative;
+  vertical-align: top;
+  height: 42px;
+  margin-bottom: 15px;
+}
+
+.googleSearchButton {
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  display: inline-block;
+}

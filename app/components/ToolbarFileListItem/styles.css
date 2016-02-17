@@ -1,0 +1,26 @@
+.wrapper {
+  padding: 10px 24px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 24px;
+  vertical-align: top;
+  position: relative;
+  cursor: pointer;
+  width: 192px;
+  height: 25px;
+}
+
+.wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.032);
+}
+
+.activeWrapper {
+  composes: wrapper;
+  color: #ff4081;
+}
+
+.fileName {
+  margin-left: 24px;
+  font-size: 16px;
+  position: absolute;
+  top: 15px;
+}

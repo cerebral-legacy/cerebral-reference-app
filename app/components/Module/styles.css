@@ -1,0 +1,11 @@
+.wrapper {
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}

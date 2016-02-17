@@ -1,0 +1,70 @@
+.wrapper {
+  font-family: Ubuntu, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.header {
+  padding: 20px;
+}
+
+.user {
+  font-size: 12px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.timelineWrapper {
+  margin-left: 5px;
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.timelineEvent {
+  position: relative;
+}
+
+.line {
+  top: 7px;
+  width: 30px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+
+.timeSinceLastSignal {
+  margin-left: 35px;
+  font-size: 10px;
+  vertical-align: top;
+  line-height: 14px;
+  display: inline-block;
+  width: 40px;
+  font-style: italic;
+}
+
+.timelineType {
+  margin-left: 5px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.timelineName {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.carret {
+  margin-left: 5px;
+  font-size: 8px;
+  line-height: 14px;
+  margin-top: 1px;
+  vertical-align: top;
+  display: inline-block;
+}

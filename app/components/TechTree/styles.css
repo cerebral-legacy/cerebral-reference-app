@@ -1,0 +1,285 @@
+.wrapper {
+  background-color: #28374b;
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  font-family: Ubuntu, sans-serif;
+  overflow: auto;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  transition: left 450ms cubic-bezier(0.23, 1, 0.32, 1) 50ms, transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 50ms;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.wrapperClosed {
+  composes: wrapper;
+  left: -100%;
+}
+
+.techTreeWrapper {
+  background: linear-gradient(to bottom, rgba(35,45,60,1) 0%, rgba(40,55,75,1) 50%, rgba(40,55,75,1) 100%);
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-left: 20px;
+}
+
+.level {
+  display: inline-block;
+  vertical-align: top;
+  width: 245px;
+  padding: 0 30px;
+}
+
+.course, .task {
+  border: 1px solid #415573;
+  background-color: #232d3c;
+  position: relative;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-align: left;
+  cursor: pointer;
+}
+
+.course {
+  height: 60px;
+  margin: 50px 0 10px 20px;
+}
+
+.task {
+  height: 50px;
+  margin: 15px 0 10px 15px;
+}
+
+.courseCompleted {
+  background-color: #28a0aa;
+  border: 1px solid #28a0aa;
+}
+
+.courseStarted {
+  background-color: #eb1e64;
+  border: 1px solid #eb1e64;
+}
+
+.courseActive {
+  border: 1px solid #eb1e64;
+}
+
+.courseSelected {
+  opacity: 0.5;
+}
+
+.courseBadge {
+  margin-top: -6px;
+  margin-left: -30px;
+  box-sizing: border-box;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #5a7396;
+  background-color: #232d3c;
+  float: left;
+  text-align: center;
+  color: #5a7396;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.courseBadgeCompleted {
+  border: 2px solid #28a0aa !important;
+  background-color: #fff !important;
+  color: #232d3c !important;
+}
+
+.courseBadgeActive {
+  border: 2px solid #eb1e64 !important;
+  background-color: #fff !important;
+  color: #232d3c !important;
+}
+
+.taskBadge {
+  margin-top: -1px;
+  margin-left: -20px;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #5a7396;
+  background-color: #232d3c;
+  float: left;
+  text-align: center;
+  color: #5a7396;
+  padding-top: 13px;
+  font-size: 20px;
+}
+
+.titleWrapper {
+  float: left;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: calc(100% - 60px);
+  vertical-align: top;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+.titleProgressWrapper {
+  composes: titleWrapper;
+  height: 45%;
+  align-items: flex-end;
+}
+.title {
+  margin-bottom: -2px;
+  padding-right: 15px;
+  font-size: 12px;
+  color: #5a7396;
+  vertical-align: top;
+  font-weight: bold;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.titleCompleted, .titleActive {
+  color: #fff !important;
+}
+
+.subTitle {
+  font-size: 12px;
+  color: #fff;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.progressWrapper {
+  display: flex;
+  float: left;
+  height: 55%;
+  align-items: center;
+  margin-left: 10px;
+  width: calc(100% - 60px);
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.progressBar {
+  background-color: #232d3c;
+  border-radius: 5px;
+  height: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.progressed {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 180px;
+  height: 20px;
+  margin: 1px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 10px;
+  color: #000;
+}
+
+.smallBox {
+  composes: box;
+  height: 83px;
+}
+
+.largeBox {
+  composes: box;
+  height: 167px;
+}
+
+.boxLevel:first-child {
+  margin-left: 15px;
+}
+
+.boxLevel {
+  display: inline-block;
+  margin-left: -2px;
+  vertical-align: top;
+}
+
+.linesLevel {
+  display: inline-block;
+  margin-left: -2px;
+  vertical-align: top;
+}
+
+.line {
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 30px;
+  height: 20px;
+  margin: 1px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 10px;
+  color: #000;
+}
+
+.centerLineLevel {
+  display: inline-block;
+  margin-left: -2px;
+  margin-right: -2px;
+  vertical-align: top;
+}
+
+.centerLine {
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 0px;
+  margin-right: 2px;
+  margin-top: 1px;
+  margin-bottom: -1px;
+  height: 21px;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 10px;
+  color: #000;
+}
+
+.removeCourse {
+  font-size: 10px;
+  font-weight: bold;
+  position: absolute;
+  right: -5px;
+  top: -8px;
+  background-color: #28374b;
+  border: 2px solid #849aba;
+  color: #849aba;
+  border-radius: 50%;
+  padding: 3px 0px;
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  cursor: pointer;
+}
+
+.removeCourse:hover {
+  border: 2px solid #eb1e64;
+  color: #fff;
+}
+
+.addNewCourseButton {
+  float: right;
+  margin-right: 20px;
+}
+
+.hidden {
+  composes: wrapper;
+  opacity: 0;
+  display: none;
+}

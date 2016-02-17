@@ -1,0 +1,14 @@
+.toolbar {
+  background-color: #f7f7f7;
+  line-height: 27px;
+  height: 36px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.title {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: Ubuntu, sans-serif;
+  float: left;
+  line-height: 30px;
+}

@@ -1,0 +1,57 @@
+.wrapper {
+  height: calc(100% - 300px);
+}
+
+.editor {
+  padding-top: 10px;
+  height: calc(100% - 200px);
+  background-color: #202634;
+  width: calc(100% - 20px);
+  margin: 0 10px;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+.fullEditor {
+  composes: editor;
+  position: fixed;
+  height: calc(100% - 500px);
+  width: 1000px;
+  z-index: 999999999;
+  border: 2px solid #232d3c;
+}
+
+.textarea {
+  height: 100px;
+  margin: 5px 10px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+}
+
+.run {
+  background-color: #4CAF50;
+  border-radius: 3px;
+  border: 0;
+  padding: 5px;
+  color: #FFF;
+  height: 30px;
+  line-height: 20px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+}
+
+.run:hover {
+  opacity: 0.9;
+}
+
+.run[disabled] {
+  opacity: 0.5;
+}
+
+.result {
+  padding: 10px;
+}

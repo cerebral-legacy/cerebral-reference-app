@@ -1,0 +1,16 @@
+.wrapper {
+  background-color: #202634;
+  height: 56px;
+  width: 100%;
+  border-bottom: 2px solid #232e3c;
+  box-sizing: border-box;
+}
+
+.toolbarOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 56px;
+  width: 100%;
+  z-index: 2;
+}

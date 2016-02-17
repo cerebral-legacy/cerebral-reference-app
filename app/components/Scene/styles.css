@@ -1,0 +1,56 @@
+.modules {
+  height: 100%;
+}
+
+.controlsAndAssignments {
+  width: 300px;
+  background-color: #fff;
+  border-right: 2px solid #232e3c;
+}
+
+.controlsAndAssignmentsAdmin {
+  composes: controlsAndAssignments;
+  background-color: transparent;
+}
+
+.code {
+  width: calc(100% - 300px);
+}
+
+.finishedHeader {
+  font-family: Ubuntu, sans-serif;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 50px 10px 0 10px;
+  color: #849aba;
+}
+
+.finishedSubheader {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #5a7396;
+}
+
+.section {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  height: 100%;
+  box-sizing: border-box;
+  border-right: 2px solid #232e3c;
+}
+
+.toolbarButtonRight {
+  float: right;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.codeEditorToolbarWrapper {
+  height: 100%;
+}

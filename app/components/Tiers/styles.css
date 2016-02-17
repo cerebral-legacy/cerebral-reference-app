@@ -1,0 +1,156 @@
+.wrapper {
+  background-color: #28374b;
+  height: 190px;
+  width: 100%;
+  font-family: Ubuntu, sans-serif;
+  box-sizing: border-box;
+  border-bottom: 1px solid #415573;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  color: #cadaed;
+}
+
+.tiersWrapper {
+  margin-top: 73px;
+  position: relative;
+  padding: 0 50px;
+  text-align: center;
+}
+
+.tier {
+  transition: all 200ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  width: 140px;
+  height: 32px;
+  border: 1px solid #eb1e64;
+  background-color: #eb1e64;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 10px;
+  margin: 0 7px;
+  box-sizing: border-box;
+  vertical-align: top;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+}
+
+.tierDisabled {
+  composes: tier;
+  border: 1px solid #415573;
+  background-color: #232d3c;
+  color: #5a7396;
+}
+
+.tierSelected {
+  width: 165px;
+  padding: 10px;
+  height: 42px;
+  margin-top: -5px;
+  font-size: 16px;
+}
+
+.tierFinished {
+  background-color: #28a0aa;
+  border: 1px solid #28a0aa;
+  color: #fff;
+}
+
+.tierAddNew {
+  border: 1px solid #cadaed;
+  background-color: #232d3c;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.inputAddNewTier {
+  height: 100% !important;
+  line-height: 30px !important;
+  padding: 0 10px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.mainAssignmentWrapper {
+  height: 100px;
+}
+
+.mainAssignmentButton {
+  width: 180px;
+  margin-top: 60px;
+}
+
+.startMainAssignmentPopup {
+  width: 400px;
+  background-color: #202633;
+  border-radius: 5px;
+  padding: 15px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  z-index: 5;
+  box-sizing: border-box;
+  border: 2px solid #1c222e;
+  opacity: 1;
+  display: block;
+  transition: opacity 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  margin-top: 110px;
+}
+
+.hidden {
+  composes: startMainAssignmentPopup;
+  opacity: 0;
+  display: none;
+}
+
+.startMainAssignmentButton {
+  display: block;
+}
+
+.mainAssignmentNameInput {
+  background-color: #fff;
+  color: #202634;
+}
+
+.mainAssignmentArrow {
+  position: absolute;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid #202633;
+  top: -13px;
+  z-index: 3;
+  left: 50%;
+  margin-left: -13px;
+}
+
+.mainAssignmentArrowBorder {
+  composes: mainAssignmentArrow;
+  border-bottom: 15px solid #1c222e;
+  border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+  top: -15px;
+  z-index: 2;
+  margin-left: -15px;
+}

@@ -1,0 +1,9 @@
+.editor {
+  margin-top: 5px;
+  width: 100%;
+  display: inline-block;
+  height: 100px;
+  border: 1px solid #eee;
+  box-shadow:inset 1px 1px 2px 0 rgba(0,0,0,0.15);
+  border: none;
+}

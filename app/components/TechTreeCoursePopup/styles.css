@@ -1,0 +1,176 @@
+.wrapper {
+  min-height: 210px;
+  width: 685px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #202633;
+  box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.5);
+  margin-top: 5px;
+  margin-left: -337px;
+  border-radius: 5px;
+  z-index: 3;
+  border: 2px solid #1c222e;
+  box-sizing: border-box;
+}
+
+.wrapper:after, .wrapper:before {
+	bottom: 100%;
+	left: 343px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow {
+  position: absolute;
+  top: -13px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid #202633;
+  z-index: 3;
+}
+
+.arrowBottom {
+  composes: arrow;
+  border-top: 13px solid #202633;
+  border-bottom: none;
+  bottom: -13px;
+  top: auto;
+}
+
+.arrowBorder {
+  composes: arrow;
+  border-bottom: 15px solid #1c222e;
+  border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+  top: -15px;
+  z-index: 2;
+}
+
+.arrowBottomBorder {
+  composes: arrowBorder;
+  border-top: 15px solid #1c222e;
+  border-bottom: none;
+  bottom: -15px;
+  top: auto;
+}
+
+.icon {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  background-color: #fff;
+  color: #232d3c;
+  border-radius: 50%;
+  font-size: 42px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.iconDisabled {
+  composes: icon;
+  background-color: #232d3c;
+  color: #5a7396;
+  border: 2px solid #5a7396;
+}
+
+.textWrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 25px;
+  padding-left: 25px;
+  width: calc(100% - 155px);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.description {
+    margin-top: 10px;
+    width: 100%;
+    white-space: normal;
+}
+
+.progressBar {
+  height: 7px;
+  border-radius: 7px;
+  background-color: #232d3c;
+  width: calc(100% - 40px);
+  margin: 20px 20px 0 20px;
+  position: relative;
+}
+
+.progressed {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 7px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.detail {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: -15px;
+  padding-top: 13px;
+  text-align: center;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.label {
+  margin-top: 3px;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+
+.button {
+  float: right;
+  margin-right: 20px;
+  height: 35px;
+  margin-top: 17px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 35px;
+  color: #fff;
+  background-color: #eb1e64;
+  cursor: pointer;
+}
+
+.buttonDisabled {
+  composes: button;
+  background-color: #232d3c;
+  color: #415573;
+}
+
+.buttonCompleted {
+  composes: button;
+  background-color: #28a0aa;
+}
+
+.buttonIcon {
+  font-size: 22px;
+  margin-right: 7px;
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: -6px;
+}

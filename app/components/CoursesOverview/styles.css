@@ -1,0 +1,28 @@
+.wrapper {
+  width: calc(100% - 30px);
+  background-color: #202634;
+  padding: 20px;
+  border: 1px solid #415573;
+  box-sizing: border-box;
+  margin-left: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.course {
+  padding: 7px 15px;
+  margin: 5px;
+  background-color: #aabbd7;
+  border: 1px solid #576679;
+  border-radius: 3px;
+  color: #1b232e;
+  font-size: 12px;
+  cursor: pointer;
+  width: calc(33.33% - 10px);
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.course:hover {
+  opacity: 0.8;
+}

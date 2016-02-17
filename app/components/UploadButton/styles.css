@@ -1,0 +1,4 @@
+.wrapper {
+  composes: button from 'common/roundButton.css';
+  margin-left: 40px;
+}

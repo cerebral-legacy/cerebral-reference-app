@@ -1,0 +1,33 @@
+.wrapper {
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.file {
+  display: inline-block;
+  font-size: 14px;
+  color: #cadaed;
+  font-family: Ubuntu, sans-serif;
+  cursor: pointer;
+  height: 100%;
+  line-height: 56px;
+  padding: 0 15px;
+}
+
+.file:hover {
+  background-color: #1c222e;
+  color: #fff;
+}
+
+.activeFile {
+  composes: file;
+  color: #fff;
+  border-bottom: 2px solid #eb1e64;
+  background-color: #232d3c;
+}
+
+.activeFile:hover {
+  color: #fff;
+  background-color: #232d3c;
+}

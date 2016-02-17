@@ -1,0 +1,37 @@
+.wrapper {
+  width: 250px;
+  padding: 20px;
+  position: relative;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.sceneInput {
+  margin-top: 5px;
+}
+
+.savingIcon {
+  font-size: 26px;
+  line-height: 18px;
+  vertical-align: top;
+}
+
+.radioButton {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.radioLabel {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  margin-top: 15px;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: #cadaed;
+}

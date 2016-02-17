@@ -1,0 +1,55 @@
+.wrapper {
+  width: 100%;
+  height: calc(100% - 56px);
+  position: relative;
+  border-right: 2px solid #232e3c;
+  box-sizing: border-box;
+}
+
+.editor {
+  padding-top: 20px;
+  background-color: #202634;
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.run {
+  background-color: #eb1e64;
+  border-radius: 3px;
+  border: 0;
+  padding: 0 15px;
+  color: #fff;
+  height: 40px;
+  line-height: 16px;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  outline: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.run:hover {
+  opacity: 0.9;
+}
+
+.run[disabled] {
+  opacity: 0.5;
+}
+
+.playIcon {
+  font-size: 26px;
+  margin-right: 7px;
+  display: inline-block;
+  margin-left: -9px;
+}
+
+.buttonText {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+}

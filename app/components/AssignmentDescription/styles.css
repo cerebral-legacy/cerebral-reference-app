@@ -1,0 +1,50 @@
+.tagName {
+  font-weight: bold;
+  cursor: help;
+  color: #ff4081;
+}
+
+.tooltipWrapper {
+  font-family: Ubuntu, sans-serif;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: -45px;
+  width: 600px;
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  background-color: #28374b;
+  border: 1px solid #232d3c;
+  color: #cadaed;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 1000;
+  transition: opacity 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms,
+  visibility 400ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  box-shadow: 4px 4px 15px -3px rgba(0,0,0,0.38);
+}
+
+.codeWrapper {
+  background-color: #202633;
+  border-radius: 3px;
+  padding-top: 5px;
+}
+
+.hide {
+  composes: tooltipWrapper;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltipHeader {
+  font-size: 16px;
+}
+
+.url {
+  text-decoration: none;
+  color: #004b87;
+}
+
+.url:hover {
+  text-decoration: underline;
+}

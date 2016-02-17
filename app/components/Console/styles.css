@@ -1,0 +1,10 @@
+.wrapper {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: calc(100% - 36px);
+}
+
+.wrapperHidden {
+  composes: wrapper;
+  display: none;
+}

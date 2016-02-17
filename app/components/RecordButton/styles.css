@@ -1,0 +1,7 @@
+.wrapper {
+  composes: button from 'common/roundButton.css';
+}
+
+.recording {
+  composes: wrapper;
+}

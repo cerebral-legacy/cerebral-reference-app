@@ -1,0 +1,72 @@
+.wrapper {
+  height:60px;
+  border-bottom: 2px solid #232e3c;
+  background-color: #eb1e64;
+  margin-top: -2px;
+  color: #fff;
+  font-family: Ubuntu, sans-serif;
+  overflow: auto;
+  cursor: pointer;
+}
+
+.iconWrapper {
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.icon {
+  color: #eb1e64;
+  line-height: 38px;
+  font-size: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.scenesList {
+  position: absolute;
+  margin-top: 31px;
+  background-color: #28374c;
+  z-index: 10;
+  left: 0;
+  width: 298px;
+  padding: 15px 0;
+}
+
+.scene {
+  padding: 15px 15px;
+  font-size: 14px;
+  color: #cadaed;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+}
+
+.scene:hover {
+  color: #fff;
+  background-color: #202634;
+}
+
+.checked {
+  color: #1eaa6e;
+  float: right;
+}
+
+.activeScene {
+  composes: scene;
+  color: #fff;
+}
+
+.courseWrapper {
+  display: inline-block;
+  vertical-align: top;
+}
