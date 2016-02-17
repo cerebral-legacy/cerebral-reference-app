@@ -7,3 +7,5 @@ A reference application for Cerebral
 The startup team at "Kodeboksen"
 
 [www.cerebraljs.com](http://www.cerebraljs.com)
+
+Licensed under MIT
